@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { TelegramWebApps } from 'telegram-webapps-types';
-import WebApp = TelegramWebApps.WebApp;
 
 // @ts-ignore
-const tg: WebApp = window.Telegram.WebApp;
+const tg = window.Telegram.WebApp;
 
 function App() {
 
