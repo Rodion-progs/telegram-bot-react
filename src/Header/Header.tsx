@@ -4,7 +4,7 @@ import { useTelegram } from '../hooks/useTelegram';
 import './Header.css';
 
 const Header: React.FC<HTMLAttributes<HTMLElement>> = (props) => {
-    const { user, handleClose, handleToggleButton } = useTelegram();
+    const { user, handleClose } = useTelegram();
 
     return (
         <header {...props} className={'header'}>
