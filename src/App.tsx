@@ -6,7 +6,7 @@ import { Endpoints } from './endpoints';
 import { ProductList, Form, Header } from './components';
 
 function App() {
-    const { tg, handleToggleButton } = useTelegram();
+    const { tg } = useTelegram();
 
     useEffect(() => {
         tg.ready();

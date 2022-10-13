@@ -28,13 +28,13 @@ const Form: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = (props) => {
         return () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
-    }, [onSendData])
+    }, [onSendData, tg])
 
     useEffect(() => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
-    }, [])
+    }, [tg])
 
     useEffect(() => {
         if(!street || !country) {
