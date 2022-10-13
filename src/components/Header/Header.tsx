@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import Button from '../Button/Button';
-import { useTelegram } from '../hooks/useTelegram';
+import { useTelegram } from '../../hooks/useTelegram';
 import './Header.css';
 
 const Header: React.FC<HTMLAttributes<HTMLElement>> = (props) => {
