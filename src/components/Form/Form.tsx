@@ -21,7 +21,7 @@ const Form: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = (props) => {
             subject
         }
         tg.sendData(JSON.stringify(data));
-    }, [country, street, subject]);
+    }, [country, street, subject, tg]);
 
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSendData)
