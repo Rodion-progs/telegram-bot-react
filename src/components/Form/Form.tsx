@@ -42,7 +42,7 @@ const Form: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = (props) => {
         } else {
             tg.MainButton.show();
         }
-    }, [country, street])
+    }, [country, street, tg])
 
     const onChangeCountry = (e: ChangeEvent<HTMLInputElement>) => {
         setCountry(e.target.value)
