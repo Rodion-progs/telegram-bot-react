@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import Button from '../Button/Button';
+import { Button } from '../index';
 import { useTelegram } from '../../hooks/useTelegram';
 import './Header.css';
 

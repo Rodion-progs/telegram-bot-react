@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Header from './components/Header/Header';
 import { useTelegram } from './hooks/useTelegram';
 import { Routes, Route } from 'react-router-dom';
 import { Endpoints } from './endpoints';
-import ProductList from './components/ProductList/ProductList';
+import { ProductList, Form, Header } from './components';
 
 function App() {
     const { tg, handleToggleButton } = useTelegram();
@@ -18,7 +17,7 @@ function App() {
             <Header />
             <Routes>
                 <Route index element={<ProductList />} />
-                <Route path={Endpoints.Form} element={<ProductList />} />
+                <Route path={Endpoints.Form} element={<Form />} />
             </Routes>
         </div>
     );
